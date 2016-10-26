@@ -2,7 +2,7 @@
 <p>Bem vindo às páginas de teste de uso do Code Igniter!</p>
 
 <div class="container">
-    <div class="panel panel-primary">
+    
         <button type="button" id="btn-criar-cadastro" class="btn btn-primary"  />Cadastrar usuário</button>
     
     <div id="resultado" hidden>

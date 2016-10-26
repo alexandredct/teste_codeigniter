@@ -1,5 +1,6 @@
-<div class="panel-heading">Cadastro de novo usuário</div>
-            <div class="panel-body">
+<div class="panel panel-primary">
+    <div class="panel-heading">Cadastro de novo usuário</div>
+        <div class="panel-body">
 
             
 <?php
@@ -43,5 +44,6 @@
 
     echo form_close();
 ?>  
-    </div>        
+        </div>       
+    </div>
 </div>
