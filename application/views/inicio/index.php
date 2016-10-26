@@ -3,12 +3,15 @@
 
 <div class="container">
     <div class="panel panel-primary">
-        <div class="panel-heading">Cadastro de novo usuário</div>
-            <div class="panel-body">
-                <?php $this->load->view("inicio/cadastro_usuario"); ?>
-            </div>
-        </div>
+        <button type="button" id="btn-criar-cadastro" class="btn btn-primary"  />Cadastrar usuário</button>
+    
+    <div id="resultado" hidden>
+        <?php $this->load->view('inicio/cadastro_usuario.php');?>
     </div>
+    
+    <?php //$this->load->view("inicio/cadastro_usuario.php"); ?>
+    </div>
+
 </div
     
 

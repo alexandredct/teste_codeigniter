@@ -1,3 +1,7 @@
+<div class="panel-heading">Cadastro de novo usuário</div>
+            <div class="panel-body">
+
+            
 <?php
     $this->load->helper('form');
     echo form_open("cadastro/novo_usuario");//irá chamar a função novo_usuario no arquivo Cadastro        
@@ -39,3 +43,5 @@
 
     echo form_close();
 ?>  
+    </div>        
+</div>
