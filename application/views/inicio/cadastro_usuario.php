@@ -1,11 +1,10 @@
 <div class="panel panel-primary">
     <div class="panel-heading">Cadastro de novo usuário</div>
         <div class="panel-body">
-
             
 <?php
     $this->load->helper('form');
-    echo form_open("cadastro/novo_usuario");//irá chamar a função novo_usuario no arquivo Cadastro        
+    echo form_open("Usuarios_controller/novo_usuario");//irá chamar a função novo_usuario no arquivo Cadastro        
     echo form_label("Nome", "nome"); //form_label([Informação que será exibida], "id do campo")
     echo form_input(array(
         "name" => "nome",
@@ -44,6 +43,7 @@
 
     echo form_close();
 ?>  
+            
         </div>       
     </div>
 </div>

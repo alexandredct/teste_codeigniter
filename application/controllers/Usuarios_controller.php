@@ -1,9 +1,8 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-Class Cadastro extends CI_Controller{
-    public function novo_usuario(){
-                     
+Class Usuarios_controller extends CI_Controller{
+    public function novo_usuario(){                     
         $usuario = array(
             "nome" => $this->input->post("nome"),
             "email" => $this->input->post("email"),
@@ -14,4 +13,16 @@ Class Cadastro extends CI_Controller{
         $this->usuarios_model->novo($usuario);
         $this->load->template("inicio/index.php");
     }
+    
+    public function listar_todos_usuarios(){
+        $this->load->model("usuarios_model");
+        $usuarios = $this->usuarios_model->todos();
+        $dados = array ("usuarios" => $usuarios);
+        $this->load->template("inicio/listar_usuarios.php", $dados);
+    }
+    
+    public function formulario(){
+        $this->load->template("inicio/cadastro_usuario.php");
+    }
+    
 }

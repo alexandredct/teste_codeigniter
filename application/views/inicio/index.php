@@ -3,13 +3,9 @@
 
 <div class="container">
     
-        <button type="button" id="btn-criar-cadastro" class="btn btn-primary"  />Cadastrar usuário</button>
+    <?= anchor('Usuarios_controller/formulario','Novo Usuario', array("class" => "btn btn-primary")) ?>
+    <?= anchor('Usuarios_controller/listar_todos_usuarios','Usuários Cadastrados', array("class" => "btn btn-primary")) ?>
     
-    <div id="resultado" hidden>
-        <?php $this->load->view('inicio/cadastro_usuario.php');?>
-    </div>
-    
-    <?php //$this->load->view("inicio/cadastro_usuario.php"); ?>
     </div>
 
 </div
